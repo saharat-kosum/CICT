@@ -4,7 +4,7 @@ function TriangleCalculator(a, b, c) {
   c = parseFloat(c);
   let output;
 
-  console.log("Demo branch test")
+  console.log("Demo branch test");
 
   if (!Number.isInteger(a) || !Number.isInteger(b) || !Number.isInteger(c)) {
     return "Value is not an integer";
@@ -18,8 +18,8 @@ function TriangleCalculator(a, b, c) {
   else if (a == b && b == c) {
     output = "Equilateral";
   } else if (a == b || a == c || b == c) {
-    output = "Isosceles";
-    // output = "Scalene";
+    // output = "Isosceles";
+    output = "Scalene";
   } else {
     output = "Scalene";
   }
@@ -27,5 +27,3 @@ function TriangleCalculator(a, b, c) {
 }
 
 module.exports = TriangleCalculator;
-
-
